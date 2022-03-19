@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat',sans-serif;
 }
-
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    
+    height: 893px;
+}
 .wrapperPrincipal{
-    width: 375px;
-    height: 964px;
+    width: 100%;
+    min-height: 964px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B1D29;
+    position: relative;
 }
 
 .wrapperNav{
@@ -15,13 +33,27 @@
     height: 84px;
     align-items: center;
     background-color: #1E212E;    
-    position: sticky;
+    position: fixed;
     top: 0px;
+    left: 0px;
 }
 
+
+
 .wrapperMenu{
+    margin-top: 85px;
+    z-index: 2;
+    background-color: #1E212E; 
+    position: absolute;
+    top: 1%;
+    left: 0px;
+    width: 100%;
+}
+
+.visible{
     display: none;
 }
+
 
 .botonHamburguesa{
     display: block;
@@ -29,6 +61,7 @@
     border: none;
     margin-right: 20px;
     cursor: pointer;
+    transform: rotate(180deg);
 }
 .unionLogos{
     display: flex;
@@ -44,7 +77,89 @@
 .cursor{
     cursor: pointer;
 }
-main{
-    background-color: #1B1D29;
-    height: 893px;
+
+li{
+    display: block;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    cursor: pointer;
 }
+
+li > a {
+    display: block;
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 16px;
+
+}
+.entrar{
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    background: linear-gradient(to right, rgb(117, 218, 110), rgb(86, 155, 81));
+}
+
+.transp{
+    border: 2px solid rgb(79, 147, 74);
+    color: rgb(79, 147, 74);
+    font-size: 0.8rem;
+    background: transparent;
+}
+
+.boton{    
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;  
+    width: 150px;
+    height: 40px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.idioma{
+    color: white;
+    font-size: 0.89rem;
+    min-width: 64px;
+    height: 93px;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 6px 8px;
+}
+
+.es{
+    margin-right: 10px;
+    
+}
+
+.wrpIdioma{
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow{   
+    fill: white;
+    width: 12px;
+    height: 12px;
+}
+
