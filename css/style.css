@@ -12,11 +12,21 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #1B1D29;
+    
 }
 main{
-    
+    margin-top: 150px;
     height: 893px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+    margin-left: 30px;
+    margin-right: 30px;
+    
+    
 }
+
 .wrapperPrincipal{
     width: 100%;
     min-height: 964px;
@@ -24,6 +34,12 @@ main{
     flex-direction: column;
     background-color: #1B1D29;
     position: relative;
+    background-image: url('/assets/images/elipse.svg');
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: contain;
+    background-position-y: 175px;
+  
 }
 
 .wrapperNav{
@@ -37,8 +53,6 @@ main{
     top: 0px;
     left: 0px;
 }
-
-
 
 .wrapperMenu{
     margin-top: 85px;
@@ -79,20 +93,24 @@ main{
 }
 
 li{
-    display: block;
+    
     padding: 0px 16px;
     display: flex;
     align-items: center;
     min-height: 48px;
-    cursor: pointer;
+    cursor: pointer;   
+    justify-content: space-between;
 }
 
 li > a {
-    display: block;
-    
+    display: block;    
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.subMenu > li{
+    font-size: 0.85rem;
 }
 
 .botonera{
@@ -116,10 +134,8 @@ li > a {
     background: transparent;
 }
 
-.boton{    
-    width: 100%;
-    cursor: pointer;
-    height: 100%;
+.boton{       
+    cursor: pointer;   
     outline: none;
     font-weight: 600;
     border-radius: 5px;
@@ -161,5 +177,43 @@ li > a {
     fill: white;
     width: 12px;
     height: 12px;
+    margin-right: 10px;
 }
 
+.subMenu > li{
+    color: white;
+    text-transform: uppercase;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+p{
+    color: white;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+    margin-top: 33px;
+}
+
+.boton2{    
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    cursor: pointer;    
+    outline: none;    
+    border-radius: 5px;
+    text-transform: uppercase;  
+    margin: 0px;
+    margin-top: 10px;
+    padding: 18px 30px 18px 30px;
+    background: linear-gradient(to right, rgb(117, 218, 110), rgb(86, 155, 81));
+    border: none;
+    margin-top: 33px;
+}
+
+.wrpImg{
+    margin-top: -30px;
+}
