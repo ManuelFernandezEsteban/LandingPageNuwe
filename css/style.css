@@ -218,6 +218,7 @@ p{
 
 .wrpImg{
     margin-top: -30px;
+    position: relative;
 }
 .wrapperNavLarger{
     display: none;
@@ -228,6 +229,13 @@ p{
     flex-direction: column;
     align-items: center;
 
+}
+
+.codeResp{
+    display: block;
+}
+.codeDesk{
+    display: none;
 }
 @media (min-width:565px) {
     .wrapperPrincipal{
@@ -240,8 +248,28 @@ p{
     .wrapperNavLarger{
         display: none;
     }
+    .codeDesk{
+        display: none;
+    }
+    .codeResp{
+        display: block;
+    }
 }
 @media (min-width:900px){
+    .codeDesk{
+        display: block;
+        position: absolute;
+        height: 100%;
+        right: 0%;
+        top: 0%;     
+        
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+    .codeResp{
+        display: none;
+    }
     .wrapperNav{
         display: none;
     }
@@ -286,14 +314,17 @@ p{
         display: flex;
 
     }
-    .wrpH1{
-        width: 50%;
+    .wrpH1{        
         align-items: flex-start;
+        width: 40%;
+        margin-left: 65px;
     }
     main{
         flex-direction: row;   
         width: 100%;    
-        justify-content: space-around; 
+        height: 100vh;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .titulo{
         text-align: left;
@@ -306,11 +337,10 @@ p{
         background-image: url('/assets/images/elipseGrande.svg');
         background-repeat: no-repeat;    
         background-position: center;
-        background-size: contain;
-        background-position-x: right;
-        width: 756px;
-
-        
+        background-size: contain;        
+        width: 60%;  
+        height: 100%;   
+        position: relative;  
     }
     .wrapperPrincipal{
         background-image: none;
@@ -318,5 +348,53 @@ p{
         background-position: center;
         background-size: contain;
         background-position-y: 175px;
+    }
+
+    #star31{
+        position: absolute;
+        top: 0%;
+        left: 4%;
+
+    }
+    #star32{
+        position: absolute;
+        top: 8%;
+        left: 4%;
+    }
+    #star33{
+        position: absolute;
+        top: 20%;
+        left: 4%;
+    }
+    #star34{
+        position: absolute;
+        top: 18%;
+        left: 0%;
+    }
+    #star35{
+        position: absolute;
+        top: 3%;
+        left: 19%;
+    }
+    #star36{
+        position: absolute;
+        top: 81%;
+        left: 87%;
+    }
+    #star37{
+        position: absolute;
+        top: 81%;
+        left: 67%;
+    }
+    
+    #star39{
+        position: absolute;
+        top: 81%;
+        left: 77%;
+    }
+    #star40{
+        position: absolute;
+        top: 90%;
+        left: 82%;
     }
 }
