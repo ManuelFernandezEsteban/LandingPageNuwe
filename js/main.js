@@ -50,9 +50,10 @@ function iniciar() {
     })
 
     botonEnD.addEventListener('click',cambiarIdiomaEn);
-    botonEsD.addEventListener('click',cambiarIdiomaEn);
     botonEnMv.addEventListener('click',cambiarIdiomaEn);
-    botonEsMv.addEventListener('click',cambiarIdiomaEn);
+
+    botonEsD.addEventListener('click',cambiarIdiomaEs);   
+    botonEsMv.addEventListener('click',cambiarIdiomaEs);
    
 }
 
@@ -72,8 +73,24 @@ function cerrarPopUp(){
 function cambiarIdiomaEn(){
 
     console.log('ingles');
+    
 }
 function cambiarIdiomaEs(){
     console.log('español');
 
+    if (screen.width<900){
+        if (botonEnMv.classList.contains('visible')){
+            botonEnMv.classList.remove('visible');
+        }else{
+            botonEnMv.classList.add('visible');;
+        }
+    }
+    else{
+        if (botonEnD.classList.contains('visible')){
+            botonEnD.classList.remove('visible');
+        }else{
+            botonEnD.classList.add('visible');;
+        }        
+    }
+    
 }

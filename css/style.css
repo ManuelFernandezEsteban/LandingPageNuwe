@@ -180,7 +180,7 @@ li > a {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    background-color: transparent;
+    background-color: #1E212E;
     padding: 6px 8px;
 }
 
@@ -315,13 +315,27 @@ h3{
 .botones-idioma{
     position: relative;
 }
-#idioma2{
+
+
+
+.idiomaAbsMv{
     position: absolute;
     top: 86%;
     right: 0%;
 }
+
+
+.idiomaAbsD{
+    position: absolute;
+    top: 86%;
+    right: 0%;
+}
+#idiomaEnM #idiomaEnD{
+    text-decoration: none;
+}
 .visible{
     display: none;
+
 }
 @media (min-width:565px) {
     
@@ -344,7 +358,7 @@ h3{
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-top: 200px;
+        margin-top: 0;
 
     }
     .caja-popUp{
@@ -447,9 +461,6 @@ h3{
         background-position: center;
         min-height: 100vh;
     }
-
-
-    
     
 
 }
